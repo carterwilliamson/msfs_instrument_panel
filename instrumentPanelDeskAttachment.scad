@@ -3,7 +3,7 @@ height=10;
 depth=3;
 holeRadius=3/2;
 
-deskThickness=29.75;
+deskThickness=29.65;
 deskDropback=12;
 
 vertDepth=55+deskDropback;
@@ -53,9 +53,9 @@ translate([-deskThickness/2,-vertHeight/2,0]){
 }
 
 //Outside Left Bevel
-translate([-deskThickness-19.87,-vertHeight/2,0]){
+translate([-deskThickness-20.25,-vertHeight/2,0]){
     difference(){
-        cube([deskThickness, vertHeight,10]);
+        cube([deskThickness+2, vertHeight,10]);
         rotate([90,0,0]){
             translate([15,20,-12]){
                 cylinder(r=20,h=vertHeight*2, $fn=32);
@@ -71,7 +71,7 @@ translate([-deskThickness-19.87,-vertHeight/2,0]){
 }
 
 //Outside Right Bevel
-translate([deskThickness-20+vertHeight,-vertHeight/2,0]){
+translate([deskThickness-20.25+vertHeight,-vertHeight/2,0]){
     difference(){
         cube([deskThickness, vertHeight,10]);
         rotate([90,0,0]){
